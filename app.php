@@ -1,8 +1,8 @@
 <!doctype html>
 <?php
-    $servername = "localhost";
-    $username= "root";
-    $password= "";
+    $servername = "it330sunerserver.mysql.database.azure.com";
+    $username= "MarkAnthony@it330sunerservers";
+    $password= "Freestyle07";
     $dbname= "mydb";
     $s_id= "";
     $s_fname= "";
