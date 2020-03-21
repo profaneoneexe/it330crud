@@ -13,13 +13,13 @@
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     //CONNECT
-    try{
-        $conn =mysqli_connect($servername,$username,$password,$dbname);
     
-    }catch (MySQLi_Sql_Exception $ex) {
-        echo("error in connecting");
-
+        $conn =mysqli_connect($servername,$username,$password,$dbname);
+    if(!$conn){
+        die("Connection Failed:" . mysqli_connect_error());
     }
+    
+   
     
 
     function getData(){
